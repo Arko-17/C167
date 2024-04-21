@@ -26,6 +26,8 @@ AFRAME.registerComponent("play-on-click", {
         })
         this.videoEl.pause();
     }
- }
+ },
+  play: function() {
+    window.addEventListener("click",this.onClick);
 
 });
